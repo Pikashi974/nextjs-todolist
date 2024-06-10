@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": "",
+      "statut": "pending",
+      "text": "Task 1",
+      "dateCreation": "07/06/2024"
+    },
+    {
+      "id": "",
+      "statut": "complete",
+      "text": "Task 2",
+      "dateCreation": "07/06/2024"
+    },
+    {
+      "id": "",
+      "statut": "pending",
+      "text": "Task 3",
+      "dateCreation": "07/06/2024"
+    },
+    {
+      "id": "",
+      "statut": "complete",
+      "text": "Task 4",
+      "dateCreation": "07/06/2024"
+    }
+  ]
+}
