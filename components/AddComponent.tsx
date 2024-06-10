@@ -6,13 +6,13 @@ export default function AddComponent() {
   const [firstName, setFirstName] = useState("");
   function addTask() {
     if (firstName != "") {
-      fetch("http://localhost:3000" + "/api/categories", {
+      fetch("./api/categories", {
         method: "POST",
         body: JSON.stringify({
           titre: firstName,
         }),
       });
-      location.href = "http://localhost:3000";
+      location.href = "/";
     }
   }
   return (

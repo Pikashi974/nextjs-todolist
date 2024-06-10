@@ -8,7 +8,7 @@ export default function TaskComponent() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000" + "/api/categories", {
+    fetch("./api/categories", {
       method: "GET",
     })
       .then((response) => response.json())
@@ -19,14 +19,14 @@ export default function TaskComponent() {
   }, []);
 
   function validateTask(id: string) {
-    fetch("http://localhost:3000" + "/api/categories", {
+    fetch("./api/categories", {
       method: "PUT",
       body: JSON.stringify({
         id: id,
         method: "setStatus",
       }),
     });
-    fetch("http://localhost:3000" + "/api/categories", {
+    fetch("./api/categories", {
       method: "GET",
     })
       .then((response) => response.json())
@@ -36,13 +36,13 @@ export default function TaskComponent() {
       .catch((error) => console.log(error));
   }
   function deleteTask(id: string) {
-    fetch("http://localhost:3000" + "/api/categories", {
+    fetch("./api/categories", {
       method: "DELETE",
       body: JSON.stringify({
         id: id,
       }),
     });
-    fetch("http://localhost:3000" + "/api/categories", {
+    fetch("./api/categories", {
       method: "GET",
     })
       .then((response) => response.json())
